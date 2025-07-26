@@ -39,8 +39,7 @@ case $kernel_version in
     *) ksu_supported=false ;;
 esac
 
-ui_print "Made by @Rembo404"
-ui_print " " "  -> ksu_supported: $ksu_supported"
+ui_print " "  -> ksu_supported: $ksu_supported"
 $ksu_supported || abort "  -> Non-GKI device, abort."
 
 # boot install
